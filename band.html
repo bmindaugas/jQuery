@@ -5,26 +5,21 @@
     <meta charset="UTF-8">
 
     <title>jquery</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <style>
-        .style1{
-            color: red;
-            cursor: pointer;
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 </head>
 
 <body>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officia, accusamus ab dolores veniam dolorem molestiae
         eveniet, quia nihil hic incidunt a ipsam iure commodi! Quod, temporibus. Possimus, dolorum natus.</p>
-    <a class="style1">Slėpti</a>
+    <a>Slėpti</a>
     <script>
             $(document).ready(function(){
-                $("a").hover(function(){
-                    $("p").hide(50);
+                $("a").mouseover(function(){
+                    $('p').hide(50);
                 });
                 $("a").mouseout(function(){
-                    $("p").show();
+                    $('p').show();
                 });
             });
             </script>
